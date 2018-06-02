@@ -35,6 +35,10 @@ Docker doesn't use hardware virtualization, programs inside docker interface dir
 * **docker rmi <image>** : remove an image
 
 
+## Docker Volumes:
+* **docker run -d --volume <folder> --name <container_name> image** : This will create a docker container that is a storage volume
+* **docker run -d --volumes-from <container_name from above> --name <container_name> image** - this will create a container that mounts the volume from the other container
+
 
 
 
