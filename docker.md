@@ -27,7 +27,14 @@ Docker doesn't use hardware virtualization, programs inside docker interface dir
 * **docker exec <image> <command>** : this will run the command on the named image (i.e. docker exec mycontainer ps - lists the processes running on the container named 'mycontainer')
 * **docker logs <image>** : will tail the logs on the container
 * **docker rm -vf $(docker ps -a -q)** : quick cleanup of all docker containers
-* **docker pull
+* **docker pull <image>** : pull an image down
+* **docker save -o myfile.tar <image>** : save an image 
+* **docker load -i myfile.tar** : load an image
+* **docker build <folder>** : build an image from a Dockerfile
+* **docker image ls** : list docker images
+* **docker rmi <image>** : remove an image
+
+
 
 
 
