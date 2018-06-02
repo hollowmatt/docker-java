@@ -20,7 +20,7 @@ Docker doesn't use hardware virtualization, programs inside docker interface dir
 * **docker ps -a** <- even if stopped
 * **docker run <file>** : this will look for an image on the computer, if it isn't installed, it will search docker hub for the image, if it finds it, it downloads it , installes it, then creates a container and starts it
 * **docker run --detach --name <name> <image>** : this will run a detached instance of an image (runs in background as daemon).  you can use -d in place of --detach
-* **docker restart <name>** : this will restart a stopped containerd
+* **docker restart <name>** : this will restart a stopped container
 * **docker container stop <name>** : this will stop an instance
 * **docker container rm <name>** : this will delete a container
 * **docker image rm <name>** : this will delete an image of a container (Base)
