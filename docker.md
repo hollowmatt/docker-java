@@ -39,6 +39,11 @@ Docker doesn't use hardware virtualization, programs inside docker interface dir
 * **docker run -d --volume <folder> --name <container_name> image** : This will create a docker container that is a storage volume
 * **docker run -d --volumes-from <container_name from above> --name <container_name> image** - this will create a container that mounts the volume from the other container
 
+There are two types of volumes: Bind Volumes and Managed Volumes.
+###Bind Volume
+A bind volumne is a mount to a user specified location on the host file system
+* **docker run -d --name bmweb -v ~/example-docs:/usr/local/apache2/htdocs -p 80:80 httpd:latest** : this will mount the local ~/example-docs folder to the /usr/local/apache2/htdocs folder in the container.
+
 
 
 
